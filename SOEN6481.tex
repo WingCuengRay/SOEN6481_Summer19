@@ -93,7 +93,7 @@ Figure 2 is the use case diagram of the calculator. A use case stands head and i
 Figure 3 is the sequence diagram of the calculator. It shows the sequence from use input to calculator output.
 
 \begin{center}
-  \begin{figure}[h!]
+  \begin{figure}
       \centering
       \includegraphics[width=0.9\linewidth]{image/useCaseDiagram.png}
       \caption{Use case diagram}
@@ -102,7 +102,7 @@ Figure 3 is the sequence diagram of the calculator. It shows the sequence from u
 \end{center}
 
 \begin{center}
-  \begin{figure}[h!]
+  \begin{figure}
       \centering
       \includegraphics[width=0.7\linewidth]{image/sequenceDiagram.png}
       \caption{sequence diagram}
@@ -110,4 +110,91 @@ Figure 3 is the sequence diagram of the calculator. It shows the sequence from u
   \end{figure}
 \end{center}
 
+
+\pagebreak
+\section{Problem 6: User Stories}
+\begin{itemize}
+    \item US1: An accountant can do arithmetic operations (addition, multiplication, division and subtraction) on two numbers to get the result of operations.
+    
+    Priority: MUST HAVE. This is the basic functionality of a calculator.
+    
+    Estimation with Fibonacci-format: 4
+    
+    Constraint: Accuracy and Correctness
+    
+    Acceptance Tests: Given a valid arithmetic operator with two numbers, I should see the correct result of the operation.
+    
+    \item US2: An accountant can be shown with error message if he/she input the wrong combination of operators and digits.
+    
+    Priority: MUST HAVE. It is necessary for user experience if something is wrong.
+    
+    Estimation with Fibonacci-format: 2
+    
+    Constraint: Efficiency
+    
+    Acceptance Tests: Give an invalid sequence of input, I should see the error with error message after I submit them.
+    
+    \item US3: An accountant can delete a wrongly input digit to correct his/her input sequence.
+    
+    Priority: SHOULD HAVE. This is necessary for user experience to correct their input
+    
+    Estimation with Fibonacci-format: 1 
+    
+    Constraint: Efficiency
+    
+    Acceptance Tests: Give an invalid sequence of input, I should be able to delete from the last input character one by one before I submit it.
+    
+    \item US4: An accountant can specify a precision so that he/she can see the Champernowne Constant in this precision. 
+    
+    Priority: Could have. It's useful for user who focus on Champernowne Constant and have a look about its pattern.
+    
+    Estimation with Fibonacci-format: 2
+    
+    Constraint: Correctness
+    
+    Acceptance Tests: Give a positive integer N and Champernowne Constant operator, I should see the  Champernowne Constant with N decimal digits.
+    
+    \item US5: An accountant can store the result in memory so that he/she can use it later.
+    
+    Priority: Could have. It's useful for user experience.
+    
+    Estimation with Fibonacci-format: 2
+    
+    Constraint: Efficiency
+    
+    Acceptance Tests: Given I have performed two operations 2+3 = 5 and 3*3 = 9, when I replay the operations by press the key HISTORY, then I should see the these two operations one by one.
+    
+    \item US6: An accountant can refresh the calculator to clear all the current and historical data.
+    
+    priority: Should have. It's helpful for user to clear the history that they don't need any more.
+    
+    Estimation with Fibonacci-format: 1
+    
+    Constraint: Efficiency
+    
+    Acceptance Tests: Given I have performed two operations 2+3 = 5 and 3*3 = 9, after I press the RESET key, the screen is cleaned and I should not track the historical data any more.
+\end{itemize}
+
+\section{Problem 7: Backward traceability matrix}
+\begin{center}
+ \begin{tabular}{||c c||} 
+ \hline
+ User Story Id & Source \\ [0.5ex] 
+ \hline\hline
+ US1 & 6   \\ 
+ \hline
+ US2 & 7  \\
+ \hline
+ US3 & 545 \\
+ \hline
+ US4 & 545  \\
+ \hline
+ US5 & 88   \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+
 \end{document}
+
+
+
